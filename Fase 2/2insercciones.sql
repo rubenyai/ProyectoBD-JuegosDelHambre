@@ -47,6 +47,7 @@ INSERT INTO Cuerpos_Ejecutivos (id_cuerpo_ejecutivo) VALUES (7);
 INSERT INTO Cuerpos_Ejecutivos (id_cuerpo_ejecutivo) VALUES (8);
 INSERT INTO Cuerpos_Ejecutivos (id_cuerpo_ejecutivo) VALUES (9);
 INSERT INTO Cuerpos_Ejecutivos (id_cuerpo_ejecutivo) VALUES (10);
+INSERT INTO Cuerpos_Ejecutivos (id_cuerpo_ejecutivo) VALUES (20);
 
 --Presidentes
 INSERT INTO Presidentes (id_presidente) VALUES (6);
@@ -65,7 +66,7 @@ INSERT INTO Distritos (id_distrito,id_representante,id_presidente,tipo,descripci
 INSERT INTO Vigilantes_Jefes (id_vigilante_jefe,id_reemplazo) VALUES (8,9);
 INSERT INTO Vigilantes_Jefes (id_vigilante_jefe,id_reemplazo) VALUES (9,10);
 INSERT INTO Vigilantes_Jefes (id_vigilante_jefe,id_reemplazo) VALUES (10,20);
-INSERT INTO Vigilantes_Jefes (id_vigilante_jefe,id_reemplazo) VALUES (20,8)
+INSERT INTO Vigilantes_Jefes (id_vigilante_jefe,id_reemplazo) VALUES (20,8);
 
 --Arenas
 INSERT INTO Arenas (id_arena,id_vigilante_jefe,forma,descripcion,tipo,fecha_creacion) VALUES (1,8,'Cuadrada','Commodo Tincidunt Associates','Dolor Sit Amet Institute','10-NOV-2011');
@@ -81,14 +82,26 @@ INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_venc
 INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (2,2,2,2,'Mus Donec Dignissim Corp.');
 INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (3,3,3,3,'Neque Nullam Nisl PC');
 INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (4,4,4,4,'Eu Corporation');
-INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (5,5,5,5,'Mi Inc.');
+INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (5,4,5,5,'MiInc.');
+INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (6,4,6,6,'Mi 333Inc.');
+INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (7,4,7,7,'Mi 222Inc.');
+INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (8,4,8,8,'Mi 111Inc.');
+INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (9,4,9,9,'jason');
+INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (10,4,9,9,'jason.');
+INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (11,4,9,9,'sadfasdf.');
 
 --Tributos
 INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (1,1,1,'Kadeem','Vazquez','Convallis PC',60,100,'ARco Y fleCHA','No Voluntario');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (2,2,2,'Jason','Beasley','Egestas A Scelerisque LLC',61,101,'ARco Y fleCHA','No Voluntario');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (3,3,3,'Ahmed','Raymond','Lobortis Augue Scelerisque Foundation',62,102,'ARco Y fleCHA','Voluntario');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (4,4,4,'Fitzgerald','Knox','Nullam Enim PC',63,103,'Esgrima','Voluntario');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (5,5,5,'Hasad','Parks','Sed LLP',64,104,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (2,1,2,'Jason','Beasley','Egestas A Scelerisque LLC',61,101,'ARco Y fleCHA','No Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (3,1,3,'Ahmed','Raymond','Lobortis Augue Scelerisque Foundation',62,102,'ARco Y fleCHA','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (4,1,4,'Fitzgerald','Knox','Nullam Enim PC',63,103,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (5,2,5,'Hasad','Parks','Sed LLP',64,1094,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (6,2,6,'Holi','Paasdass','Sed LLP',64,1004,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (7,2,7,'Ke ase','Pas','Sed LLP',64,1024,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (8,3,8,'fasdfsadfa','asfds','Sed LLP',64,104,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (9,3,8,'hey','asfds','Sed LLP',624,13004,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (10,4,8,'aja','asfds','Sed LLP',614,1804,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (11,5,8,'si','asfds','Sed LLP',664,1094,'Esgrima','Voluntario');
 
 --Obsequios
 INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (1,1,1,'Scelerisque Neque Incorporated');

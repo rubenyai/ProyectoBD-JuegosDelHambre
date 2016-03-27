@@ -21,15 +21,17 @@ Cuerpos_Paz on Cuerpos_Ejecutivos.id_cuerpo_ejecutivo=Cuerpos_Paz.id_cuerpo_paz 
 group by Cuerpos_Paz.nombre,Vigilantes_Jefes.id_reemplazo order by arenas_construidas) group by nombre_actual,aquienreemplazo order by MAX(arenas_construidas) desc;
 */
 --Este da el nombre de la persona con el id
+/*
 select nombre_actual,Cuerpos_Paz.nombre as "quien reemplazo a:" from (select Cuerpos_Paz.nombre nombre_actual,Vigilantes_Jefes.id_reemplazo aquienreemplazo, count (Arenas.id_vigilante_jefe) arenas_construidas from Arenas 
 inner join Vigilantes_Jefes on  Arenas.id_vigilante_jefe=Vigilantes_Jefes.id_vigilante_jefe inner join Cuerpos_Ejecutivos on Vigilantes_Jefes.id_vigilante_jefe=Cuerpos_Ejecutivos.id_cuerpo_ejecutivo inner join 
 Cuerpos_Paz on Cuerpos_Ejecutivos.id_cuerpo_ejecutivo=Cuerpos_Paz.id_cuerpo_paz where rownum < 2 and Vigilantes_Jefes.id_reemplazo>0 and Vigilantes_Jefes.id_vigilante_jefe=Arenas.id_vigilante_jefe
 group by Cuerpos_Paz.nombre,Vigilantes_Jefes.id_reemplazo order by arenas_construidas) inner join Cuerpos_Paz on aquienreemplazo=Cuerpos_Paz.id_cuerpo_paz where aquienreemplazo=Cuerpos_Paz.id_cuerpo_paz
 group by nombre_actual,aquienreemplazo,Cuerpos_Paz.nombre order by MAX(arenas_construidas) desc;
+*/
 
 -- 4.3 Imprima los primero 4 distritos con más ganadores ganadores, se desea el código y tipo de
 --     distrito, seguido de la cantidad de ganadores ordenado descendentemente.
-
+select codigodistrito,tipodistrito,cantidadganadores
 
 
 -- 4.4 ¿Cuál es el tributo más alto por distrito? Liste el número y descripción del distrito, seguido
