@@ -29,6 +29,7 @@ INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (7,'Sheila','M');
 INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (8,'Astra','M');
 INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (9,'Sophia','M');
 INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (10,'Ila','M');
+INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (20,'Pedra','M');
 --Seguridad
 INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (11,'Angela','F');
 INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (12,'Sandra','F');
@@ -59,9 +60,12 @@ INSERT INTO Distritos (id_distrito,id_representante,id_presidente,tipo,descripci
 INSERT INTO Distritos (id_distrito,id_representante,id_presidente,tipo,descripcion) VALUES (5,5,7,'Dictum Eu Industries','P.O. Box 736, 5972 Vulputate, Av.');
 
 --Vigilantes_Jefes
+--LOGICA: Reemplazo es el ID de quien este vigilante reemplazo
+--8 reemplazo a 9, 9 reemplazo a 10
 INSERT INTO Vigilantes_Jefes (id_vigilante_jefe,id_reemplazo) VALUES (8,9);
 INSERT INTO Vigilantes_Jefes (id_vigilante_jefe,id_reemplazo) VALUES (9,10);
-INSERT INTO Vigilantes_Jefes (id_vigilante_jefe,id_reemplazo) VALUES (10,0);
+INSERT INTO Vigilantes_Jefes (id_vigilante_jefe,id_reemplazo) VALUES (10,20);
+INSERT INTO Vigilantes_Jefes (id_vigilante_jefe,id_reemplazo) VALUES (20,8)
 
 --Arenas
 INSERT INTO Arenas (id_arena,id_vigilante_jefe,forma,descripcion,tipo,fecha_creacion) VALUES (1,8,'Cuadrada','Commodo Tincidunt Associates','Dolor Sit Amet Institute','10-NOV-2011');
@@ -69,6 +73,8 @@ INSERT INTO Arenas (id_arena,id_vigilante_jefe,forma,descripcion,tipo,fecha_crea
 INSERT INTO Arenas (id_arena,id_vigilante_jefe,forma,descripcion,tipo,fecha_creacion) VALUES (3,9,'Cuadrada','Congue Consulting','Tempor Augue Ac LLC','10-NOV-2011');
 INSERT INTO Arenas (id_arena,id_vigilante_jefe,forma,descripcion,tipo,fecha_creacion) VALUES (4,10,'Cuadrada','Commodo At Libero Incorporated','Sed Associates','10-NOV-2011');
 INSERT INTO Arenas (id_arena,id_vigilante_jefe,forma,descripcion,tipo,fecha_creacion) VALUES (5,10,'Cuadrada','Quisque Consulting','Nec Urna Foundation','10-NOV-2011');
+INSERT INTO Arenas (id_arena,id_vigilante_jefe,forma,descripcion,tipo,fecha_creacion) VALUES (6,8,'Cuadrada','holi','Nec','10-NOV-2011');
+
 
 --Lucha_Juegos
 INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (1,1,1,1,'Sollicitudin Orci Sem Foundation');

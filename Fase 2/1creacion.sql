@@ -63,6 +63,8 @@ CREATE TABLE Distritos (
 
 -- 
 -- Tabla Vigilantes_Jefes
+--LOGICA: Reemplazo es el ID de quien este vigilante reemplazo, no quien reemplazo a este vigilante. 
+--Asi que si este valor es 0, significa que no ha sido reemplazado por otro vigilante
 -- 
 CREATE TABLE Vigilantes_Jefes (
   id_vigilante_jefe number primary key,
