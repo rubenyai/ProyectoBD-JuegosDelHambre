@@ -1,0 +1,32 @@
+--------------------------------------------------------
+-- Drop tables de prueba
+--------------------------------------------------------
+drop table Patrocinadores cascade constraints;
+drop table Representantes cascade constraints;
+drop table Cuerpos_Paz cascade constraints;
+drop table Cuerpos_Ejecutivos cascade constraints;
+drop table Presidentes cascade constraints;
+drop table Distritos cascade constraints;
+drop table Vigilantes_Jefes cascade constraints;
+drop table Arenas cascade constraints;
+drop table Lucha_Juegos cascade constraints;
+drop table Tributos cascade constraints;
+drop table Obsequios cascade constraints;
+drop table Escuadrones cascade constraints;
+drop table Escuadrones_Distritos cascade constraints;
+drop table Ataques cascade constraints;
+drop table Escuadrones_Ataques cascade constraints;
+drop table Estilistas cascade constraints;
+drop table Mentores cascade constraints;
+drop table Ayudas_Estilos cascade constraints;
+drop table Trajes cascade constraints;
+drop table Luchas_Vasalajes cascade constraints;
+drop table Guias cascade constraints;
+drop table Cuerpos_Administrativos cascade constraints;
+drop table Arenas_Administrativos cascade constraints;
+drop table Cuerpos_Seguridad cascade constraints;
+drop table Torturas cascade constraints;
+drop table Seguridad_Torturas cascade constraints;
+drop table Mentores_Luchas cascade constraints;
+drop table Mutos cascade constraints;
+drop table Administrativos_Mutos cascade constraints;

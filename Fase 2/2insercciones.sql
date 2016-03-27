@@ -35,6 +35,10 @@ INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (12,'Sandra','F');
 INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (13,'Kirby','F');
 INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (14,'Dominique','F');
 INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (15,'Amy','F');
+INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (16,'Pedro','F');
+INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (17,'Ajax','F');
+INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (18,'Holi','F');
+INSERT INTO Cuerpos_Paz (id_cuerpo_paz,nombre,sexo) VALUES (19,'Ke Ase','F');
 
 --Cuerpos_Ejecutivos
 INSERT INTO Cuerpos_Ejecutivos (id_cuerpo_ejecutivo) VALUES (6);
@@ -74,11 +78,11 @@ INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_venc
 INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (5,5,5,5,'Mi Inc.');
 
 --Tributos
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (1,1,1,'Kadeem','Vazquez','Convallis PC',60,100,'ARco Y fleCHA','Graham');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (2,2,2,'Jason','Beasley','Egestas A Scelerisque LLC',61,101,'ARco Y fleCHA','Rooney');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (3,3,3,'Ahmed','Raymond','Lobortis Augue Scelerisque Foundation',62,102,'ARco Y fleCHA','Raymond');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (4,4,4,'Fitzgerald','Knox','Nullam Enim PC',63,103,'Esgrima','Plato');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (5,5,5,'Hasad','Parks','Sed LLP',64,104,'Esgrima','Chadwick');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (1,1,1,'Kadeem','Vazquez','Convallis PC',60,100,'ARco Y fleCHA','No Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (2,2,2,'Jason','Beasley','Egestas A Scelerisque LLC',61,101,'ARco Y fleCHA','No Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (3,3,3,'Ahmed','Raymond','Lobortis Augue Scelerisque Foundation',62,102,'ARco Y fleCHA','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (4,4,4,'Fitzgerald','Knox','Nullam Enim PC',63,103,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (5,5,5,'Hasad','Parks','Sed LLP',64,104,'Esgrima','Voluntario');
 
 --Obsequios
 INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (1,1,1,'Scelerisque Neque Incorporated');
@@ -172,11 +176,15 @@ INSERT INTO Arenas_Administrativos (id_arena_administrativo,id_arena,id_cuerpo_a
 INSERT INTO Arenas_Administrativos (id_arena_administrativo,id_arena,id_cuerpo_administrativo) VALUES (5,5,5);
 
 --Cuerpos_Seguridad
-INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad) VALUES (11);
-INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad) VALUES (12);
-INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad) VALUES (13);
-INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad) VALUES (14);
-INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad) VALUES (15);
+INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad,id_distrito) VALUES (11,1);
+INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad,id_distrito) VALUES (12,1);
+INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad,id_distrito) VALUES (13,1);
+INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad,id_distrito) VALUES (14,2);
+INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad,id_distrito) VALUES (15,2);
+INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad,id_distrito) VALUES (16,2);
+INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad,id_distrito) VALUES (17,3);
+INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad,id_distrito) VALUES (18,3);
+INSERT INTO Cuerpos_Seguridad (id_cuerpo_seguridad,id_distrito) VALUES (19,3);
 
 --Torturas
 INSERT INTO Torturas (id_tortura,lista_herramientas,instrucciones,lista_venenos,descripcion) VALUES (1,'Donec LLC','Charters Towers','Queensland','6620 Ipsum. Avenue');
@@ -212,38 +220,3 @@ INSERT INTO Administrativos_Mutos (id_administrativo_muto,id_cuerpo_administrati
 INSERT INTO Administrativos_Mutos (id_administrativo_muto,id_cuerpo_administrativo,id_muto) VALUES (3,3,3);
 INSERT INTO Administrativos_Mutos (id_administrativo_muto,id_cuerpo_administrativo,id_muto) VALUES (4,4,4);
 INSERT INTO Administrativos_Mutos (id_administrativo_muto,id_cuerpo_administrativo,id_muto) VALUES (5,5,5);
-
---------------------------------------------------------
--- Drop tables de prueba
---------------------------------------------------------
-/*
-drop table Patrocinadores cascade constraints;
-drop table Representantes cascade constraints;
-drop table Cuerpos_Paz cascade constraints;
-drop table Cuerpos_Ejecutivos cascade constraints;
-drop table Presidentes cascade constraints;
-drop table Distritos cascade constraints;
-drop table Vigilantes_Jefes cascade constraints;
-drop table Arenas cascade constraints;
-drop table Lucha_Juegos cascade constraints;
-drop table Tributos cascade constraints;
-drop table Obsequios cascade constraints;
-drop table Escuadrones cascade constraints;
-drop table Escuadrones_Distritos cascade constraints;
-drop table Ataques cascade constraints;
-drop table Escuadrones_Ataques cascade constraints;
-drop table Estilistas cascade constraints;
-drop table Mentores cascade constraints;
-drop table Ayudas_Estilos cascade constraints;
-drop table Trajes cascade constraints;
-drop table Luchas_Vasalajes cascade constraints;
-drop table Guias cascade constraints;
-drop table Cuerpos_Administrativos cascade constraints;
-drop table Arenas_Administrativos cascade constraints;
-drop table Cuerpos_Seguridad cascade constraints;
-drop table Torturas cascade constraints;
-drop table Seguridad_Torturas cascade constraints;
-drop table Mentores_Luchas cascade constraints;
-drop table Mutos cascade constraints;
-drop table Administrativos_Mutos cascade constraints;
-*/
