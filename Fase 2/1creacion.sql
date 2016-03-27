@@ -75,8 +75,8 @@ CREATE TABLE Vigilantes_Jefes (
 CREATE TABLE Arenas (
   id_arena number primary key,
   id_vigilante_jefe number,
-  forma VARCHAR2(45) NULL,
-  descripcion VARCHAR2(45) NULL,
+  forma VARCHAR2(45),
+  descripcion VARCHAR2(45),
   tipo VARCHAR2(45),
   fecha_creacion DATE
 );
@@ -466,14 +466,89 @@ references Mutos (id_muto);
 -- Restricciones
 --------------------------------------------------------
 
+--Restriccion 3.1 y 3.2 Atributos ID mayor a 0
+alter table Patrocinadores add constraint ceropatroc check (id_patrocinador > 0);
+alter table Representantes add constraint cerorepr check (id_representante > 0);
+alter table Cuerpos_Paz add constraint cerocpopaz check (id_cuerpo_paz > 0);
+alter table Cuerpos_Ejecutivos add constraint cerocpoeje check (id_cuerpo_ejecutivo > 0);
+alter table Presidentes add constraint ceropres check (id_presidente > 0);
+alter table Distritos add constraint cerodista check (id_distrito > 0 and id_distrito < 13);
+alter table Distritos add constraint cerodistb check (id_representante > 0);
+alter table Distritos add constraint cerodistc check (id_presidente > 0);
+alter table Vigilantes_Jefes add constraint cerovigjef check (id_vigilante_jefe > 0);
+alter table Arenas add constraint ceroarena check (id_arena > 0);
+alter table Arenas add constraint ceroarenb check (id_vigilante_jefe > 0);
+alter table Lucha_Juegos add constraint ceroluchajuea check (id_festejo > 0);
+alter table Lucha_Juegos add constraint ceroluchajueb check (id_arena > 0);
+alter table Lucha_Juegos add constraint ceroluchajuec check (id_tributo_ganador > 0);
+alter table Lucha_Juegos add constraint ceroluchajued check (id_tributo_vencedor > 0);
+alter table Tributos add constraint cerotribua check (id_tributo > 0);
+alter table Tributos add constraint cerotribub check (id_distrito > 0 and id_distrito < 13);
+alter table Tributos add constraint cerotribuc check (id_festejo > 0);
+alter table Obsequios add constraint ceroobsqa check (id_obsequio > 0);
+alter table Obsequios add constraint ceroobsqb check (id_patrocinador > 0);
+alter table Obsequios add constraint ceroobsqc check (id_tributo > 0);
+alter table Escuadrones add constraint ceroescuad check (id_escuadron > 0);
+alter table Escuadrones_Distritos add constraint ceroescuaddista check (id_escuadron_distrito > 0);
+alter table Escuadrones_Distritos add constraint ceroescuaddistb check (id_escuadron > 0);
+alter table Escuadrones_Distritos add constraint ceroescuaddistc check (id_distrito > 0 and id_distrito < 13);
+alter table Ataques add constraint ceroataques check (id_ataque > 0);
+alter table Escuadrones_Ataques add constraint ceroescuadataa check (id_escuadron_ataque > 0);
+alter table Escuadrones_Ataques add constraint ceroescuadatab check (id_escuadron > 0);
+alter table Escuadrones_Ataques add constraint ceroescuadatac check (id_ataque > 0);
+alter table Estilistas add constraint ceroestilista check (id_estilista > 0);
+alter table Mentores add constraint ceromentor check (id_mentor > 0);
+alter table Ayudas_Estilos add constraint ceroayesta check (id_ayuda_estilo > 0);
+alter table Ayudas_Estilos add constraint ceroayestb check (id_tributo > 0);
+alter table Ayudas_Estilos add constraint ceroayestc check (id_estilista > 0);
+alter table Ayudas_Estilos add constraint ceroayestd check (id_mentor > 0);
+alter table Trajes add constraint cerotrajea check (id_traje > 0);
+alter table Trajes add constraint cerotrajeb check (id_estilista > 0);
+alter table Luchas_Vasalajes add constraint ceroluchvasa check (id_festejo > 0);
+alter table Luchas_Vasalajes add constraint ceroluchvasb check (id_arena > 0);
+alter table Luchas_Vasalajes add constraint ceroluchvasc check (id_tributo_vencedor > 0);
+alter table Luchas_Vasalajes add constraint ceroluchvasd check (id_tributo_ganador > 0);
+alter table Guias add constraint ceroguiaa check (id_guia > 0);
+alter table Guias add constraint ceroguiab check (id_mentor > 0);
+alter table Guias add constraint ceroguiac check (id_tributo > 0);
+alter table Cuerpos_Administrativos add constraint cerocueradmina check (id_cuerpo_administrativo > 0);
+alter table Arenas_Administrativos add constraint ceroarenadmina check (id_arena_administrativo > 0);
+alter table Arenas_Administrativos add constraint ceroarenadminb check (id_arena > 0);
+alter table Arenas_Administrativos add constraint ceroarenadminc check (id_cuerpo_administrativo > 0);
+alter table Cuerpos_Seguridad add constraint cerocuersega check (id_cuerpo_seguridad > 0);
+alter table Cuerpos_Seguridad add constraint cerocuersegb check (id_distrito > 0 and id_distrito < 13);
+alter table Torturas add constraint cerotort check (id_tortura > 0);
+alter table Seguridad_Torturas add constraint cegtoraa check (id_seguridad_tortura > 0);
+alter table Seguridad_Torturas add constraint cegtorbb check (id_cuerpo_seguridad > 0);
+alter table Seguridad_Torturas add constraint cegtorcc check (id_tortura > 0);
+alter table Mentores_Luchas add constraint ceromentluca check (id_mentores_luchas > 0);
+alter table Mentores_Luchas add constraint ceromentlucb check (id_festejo > 0);
+alter table Mentores_Luchas add constraint ceromentlucc check (id_mentor > 0);
+alter table Mutos add constraint ceromuto check (id_muto > 0);
+alter table Administrativos_Mutos add constraint ceroadminmutoa check (id_muto > 0);
+alter table Administrativos_Mutos add constraint ceroadminmutob check (id_cuerpo_administrativo > 0);
+alter table Administrativos_Mutos add constraint ceroadminmutoc check (id_administrativo_muto > 0);
 
+--3.3 Sexo solo F y M
+alter table Patrocinadores add constraint sexo_patr check (sexo = 'F' or sexo='M');
+alter table Representantes add constraint sexo_rep check (sexo = 'F' or sexo='M');
+alter table Tributos add constraint sexo_trib check (sexo = 'F' or sexo='M');
+alter table Estilistas add constraint sexo_est check (sexo = 'F' or sexo='M');
+alter table Mentores add constraint sexo_ment check (sexo = 'F' or sexo='M');
 
+--3.4 Nombres no nulos
+alter table Patrocinadores add constraint Patr_NONULL check (nombre is not NULL);
+alter table Representantes add constraint repr_NONULL check (nombre is not NULL);
+alter table Tributos add constraint triba_NONULL check (nombre is not NULL);
+alter table Tributos add constraint tribb_NONULL check (sobrenombre is not NULL);
+alter table Estilistas add constraint est_NONULL check (nombre_artistico is not NULL);
+alter table Mentores add constraint ment_NONULL check (nombre is not NULL);
+alter table Mutos add constraint mut_NONULL check (nombre is not NULL);
 
 --------------------------------------------------------
 -- Drop tables de prueba
 --------------------------------------------------------
-
-  
+/*
 drop table Patrocinadores cascade constraints;
 drop table Representantes cascade constraints;
 drop table Cuerpos_Paz cascade constraints;
@@ -503,3 +578,4 @@ drop table Seguridad_Torturas cascade constraints;
 drop table Mentores_Luchas cascade constraints;
 drop table Mutos cascade constraints;
 drop table Administrativos_Mutos cascade constraints;
+*/
