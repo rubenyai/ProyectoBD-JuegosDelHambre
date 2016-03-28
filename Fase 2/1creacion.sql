@@ -105,7 +105,7 @@ CREATE TABLE Tributos (
   sobrenombre VARCHAR2(45),
   descripcion VARCHAR2(45),
   peso VARCHAR2(45),
-  altura VARCHAR2(45),
+  altura number,
   sexo VARCHAR2(45),
   habilidad VARCHAR2(45),
   forma_seleccion VARCHAR2(45)

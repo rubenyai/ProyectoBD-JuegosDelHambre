@@ -87,28 +87,29 @@ INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_venc
 INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (7,4,7,7,'Mi 222Inc.');
 INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (8,4,8,8,'Mi 111Inc.');
 INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (9,4,9,9,'jason');
-INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (10,4,9,9,'jason.');
-INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (11,4,9,9,'sadfasdf.');
+INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (10,4,10,10,'jason.');
+INSERT INTO Lucha_Juegos (id_festejo,id_arena,id_tributo_ganador,id_tributo_vencedor,resumen) VALUES (11,4,11,11,'sadfasdf.');
 
 --Tributos
 INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (1,1,1,'Kadeem','Vazquez','Convallis PC',60,100,'ARco Y fleCHA','No Voluntario');
 INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (2,1,2,'Jason','Beasley','Egestas A Scelerisque LLC',61,101,'ARco Y fleCHA','No Voluntario');
 INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (3,1,3,'Ahmed','Raymond','Lobortis Augue Scelerisque Foundation',62,102,'ARco Y fleCHA','Voluntario');
 INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (4,1,4,'Fitzgerald','Knox','Nullam Enim PC',63,103,'Esgrima','Voluntario');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (5,2,5,'Hasad','Parks','Sed LLP',64,1094,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (5,1,5,'Hasad','Parks','Sed LLP',64,1094,'Esgrima','Voluntario');
 INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (6,2,6,'Holi','Paasdass','Sed LLP',64,1004,'Esgrima','Voluntario');
 INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (7,2,7,'Ke ase','Pas','Sed LLP',64,1024,'Esgrima','Voluntario');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (8,3,8,'fasdfsadfa','asfds','Sed LLP',64,104,'Esgrima','Voluntario');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (9,3,8,'hey','asfds','Sed LLP',624,13004,'Esgrima','Voluntario');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (10,4,8,'aja','asfds','Sed LLP',614,1804,'Esgrima','Voluntario');
-INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (11,5,8,'si','asfds','Sed LLP',664,1094,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (8,2,8,'fasdfsadfa','asfds','Sed LLP',64,104,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (9,3,9,'hey','asfds','Sed LLP',624,13004,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (10,3,10,'aja','asfds','Sed LLP',614,1804,'Esgrima','Voluntario');
+INSERT INTO Tributos (id_tributo,id_distrito,id_festejo,nombre,sobrenombre,descripcion,peso,altura,habilidad,forma_seleccion) VALUES (11,4,11,'si','asfds','Sed LLP',664,1094,'Esgrima','Voluntario');
+
 
 --Obsequios
 INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (1,1,1,'Scelerisque Neque Incorporated');
-INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (2,2,2,'Donec Vitae PC');
-INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (3,3,3,'Pede Et Risus Corp.');
-INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (4,4,4,'Cum Institute');
-INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (5,5,5,'Vitae Semper Egestas Incorporated');
+INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (2,2,1,'Donec Vitae PC');
+INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (3,3,2,'Pede Et Risus Corp.');
+INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (4,4,2,'Cum Institute');
+INSERT INTO Obsequios (id_obsequio,id_patrocinador,id_tributo,descripcion) VALUES (5,5,3,'Vitae Semper Egestas Incorporated');
 
 --Escuadrones
 INSERT INTO Escuadrones (id_escuadron,tipo,descripcion) VALUES (1,'Elvis','220-3410 Nunc Av.');
